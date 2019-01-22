@@ -153,7 +153,7 @@ write your code here
 	}
 	.btn-primary:hover {
 		background: #87cefa;
-		border-color: #87cefa;
+		border: transparent;
 	}
 	.mandatory-field::after {
 		content: "*";
