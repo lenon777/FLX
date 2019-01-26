@@ -1,0 +1,216 @@
+// Write your styles here
+ @mixin butt($buttonPaddingA, $buttonPadingB)  {
+    background: $mainColor2;
+    color: #e4dff4;
+    text-decoration: none;
+    text-transform: uppercase;
+    float: right;
+    padding: $buttonPaddingA $buttonPadingB;
+    border: transparent;
+}
+@mixin postDiscr {
+    color: $postDiscrColor;
+    border-bottom:1px solid $borderColor;
+    
+}
+@mixin cont {
+    button {
+        @include butt;
+    }      
+}
+// @mixin fullName {
+//     border: 2px solid $borderColor;
+    
+// }
+// @mixin email {
+//    border-left: 1px solid $borderColor;
+//    border-right: 1px solid $borderColor;
+// }
+// @mixin textarea {
+//     border-bottom: 2px solid $borderColor;
+    
+// }
+body {
+    background: $mainBackground;
+    font: $mainFont;
+    margin: 0;
+}
+    header {
+        height: 100vh;
+        width: 100%;
+        margin-bottom: 20px;
+        background: url($headerBackground) no-repeat;
+        background-size: cover;
+        .top-wrapper{
+            display: flex;
+            justify-content: space-between;
+            .logo{
+                margin: 0;
+                width: 15%;
+                img {
+                    width: 100%;
+                
+                }
+            }
+            nav {
+                a {
+                    display: inline-block;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    padding: 20px 100px;
+                    color: $mainColor;
+                    &:nth-child(2){
+                        border-left: 2px solid $borderColor;
+                        border-right: 2px solid $borderColor;
+                    }
+                }
+                
+            }
+        }
+        section {
+            margin-top: 110px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            h1 {
+                text-transform: uppercase;
+                color: $mainColor;
+                margin-bottom: 20px;
+            }
+            a {
+                @include butt(15px,70px);
+            }
+        }
+    }
+    main{
+        margin: 0 auto;
+        width: 70%;
+    }
+        .toolbar{
+            text-align: right;
+            input {
+                background: $mainBackground;
+                border: 1px solid $borderColor;
+                padding: 10px 0px 10px 10px;
+            }
+        }
+        section{
+            color: $articleColor;
+            h1 {
+                text-align: right;
+                text-transform: uppercase;
+                margin-bottom: 0;
+            }
+            article {
+                margin-bottom: 20px;
+                padding: 10px;
+                background: $articleBackground;
+                display: flex;
+                justify-content: flex-start;
+                div {
+                    margin-left: 5px;
+                    .post{
+                        .post-description{
+                            @include postDiscr;
+                        }
+                        h3 {
+                            text-transform: uppercase;
+                            color: $headlineColor;
+                            margin-top: 7px;
+                            margin-bottom: 0;
+                        }
+                        p{
+                            margin-top: 0;
+                        }
+                        
+                    }
+                }
+                button {
+                    @include butt(13px,70px);
+                }
+            }
+        }
+        .about{
+            div {
+                h1{
+                    margin-top: 70px;
+                    margin-bottom: 0;
+                    color: $aboutColor;
+                    
+                }
+                h1+p {
+                    margin-top: 0;
+                }
+            }
+            div {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .contact-form{
+            margin-top: 50px;
+            h1{
+                margin-bottom: 0;
+            }
+            h4{
+                text-transform: uppercase;
+                text-align: right;
+                margin-top: 0;
+            }
+        }
+    
+    form {
+        .name-email-form{
+            label{
+                display:block;
+                width: 49%;
+                float: left;
+                text-align: right;
+                color: $labelColor;
+                input {
+                    width: 100%;
+                    display: block;
+                    font-size: 2rem;
+                    background: transparent;
+                    border: 1px solid #d9dfe1;
+                    
+                }
+                &:last-child{
+                    margin-left: 10px;
+                }
+            }
+        }    
+        .text-area {
+            padding-top: 70px;
+            width: 100%;
+            label {
+                display:block;
+                text-align: right;
+                width: 100%;
+                color: $labelColor;
+                textarea {
+                    width: 100%;
+                    display: block;
+                    border: 1px solid #d9dfe1;
+                    background: transparent;
+                    
+                }
+            }
+        }
+        button {
+            margin-top: 25px;
+            @include butt(13px,80px);
+        }
+        
+    } 
+    footer {
+        color: $articleColor;
+        clear: both;
+        padding-left: 10px;
+        padding-bottom: 15px;
+        font-size: 0.8rem;
+    }
+
+

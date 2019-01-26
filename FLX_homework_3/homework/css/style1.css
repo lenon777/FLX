@@ -1,0 +1,151 @@
+body {
+  background: #ffffff;
+  font: normal 300 15px/24px Roboto, Ubuntu, Cantarell, Helvetica, sans-serif;
+  margin: 0; }
+
+header {
+  height: 100vh;
+  width: 100%;
+  margin-bottom: 20px;
+  background: url("../img/header_background_v1.jpg") no-repeat;
+  background-size: cover; }
+  header .top-wrapper {
+    display: flex;
+    justify-content: space-between; }
+    header .top-wrapper .logo {
+      margin: 0;
+      width: 15%; }
+      header .top-wrapper .logo img {
+        width: 100%; }
+    header .top-wrapper nav a {
+      display: inline-block;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 20px 100px;
+      color: #ececec; }
+      header .top-wrapper nav a:nth-child(2) {
+        border-left: 2px solid #607d8b;
+        border-right: 2px solid #607d8b; }
+  header section {
+    margin-top: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    header section h1 {
+      text-transform: uppercase;
+      color: #ececec;
+      margin-bottom: 20px; }
+    header section a {
+      background: #01acac;
+      color: #e4dff4;
+      text-decoration: none;
+      text-transform: uppercase;
+      float: right;
+      padding: 15px 70px;
+      border: transparent; }
+
+main {
+  margin: 0 auto;
+  width: 70%; }
+
+.toolbar {
+  text-align: right; }
+  .toolbar input {
+    background: #ffffff;
+    border: 1px solid #607d8b;
+    padding: 10px 0px 10px 10px; }
+
+section {
+  color: #2c3536; }
+  section h1 {
+    text-align: right;
+    text-transform: uppercase;
+    margin-bottom: 0; }
+  section article {
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #efefef;
+    display: flex;
+    justify-content: flex-start; }
+    section article div {
+      margin-left: 5px; }
+      section article div .post .post-description {
+        color: red;
+        border-bottom: 1px solid #607d8b; }
+      section article div .post h3 {
+        text-transform: uppercase;
+        color: #01acac;
+        margin-top: 7px;
+        margin-bottom: 0; }
+      section article div .post p {
+        margin-top: 0; }
+    section article button {
+      background: #01acac;
+      color: #e4dff4;
+      text-decoration: none;
+      text-transform: uppercase;
+      float: right;
+      padding: 13px 70px;
+      border: transparent; }
+
+.about div h1 {
+  margin-top: 70px;
+  margin-bottom: 0;
+  color: #2c3536; }
+.about div h1 + p {
+  margin-top: 0; }
+.about div img {
+  width: 100%; }
+
+.contact-form {
+  margin-top: 50px; }
+  .contact-form h1 {
+    margin-bottom: 0; }
+  .contact-form h4 {
+    text-transform: uppercase;
+    text-align: right;
+    margin-top: 0; }
+
+form .name-email-form label {
+  display: block;
+  width: 49%;
+  float: left;
+  text-align: right;
+  color: #01acac; }
+  form .name-email-form label input {
+    width: 100%;
+    display: block;
+    font-size: 2rem;
+    background: transparent;
+    border: 1px solid #d9dfe1; }
+  form .name-email-form label:last-child {
+    margin-left: 10px; }
+form .text-area {
+  padding-top: 70px;
+  width: 100%; }
+  form .text-area label {
+    display: block;
+    text-align: right;
+    width: 100%;
+    color: #01acac; }
+    form .text-area label textarea {
+      width: 100%;
+      display: block;
+      border: 1px solid #d9dfe1;
+      background: transparent; }
+form button {
+  margin-top: 25px;
+  background: #01acac;
+  color: #e4dff4;
+  text-decoration: none;
+  text-transform: uppercase;
+  float: right;
+  padding: 13px 80px;
+  border: transparent; }
+
+footer {
+  color: #2c3536;
+  clear: both;
+  padding-left: 10px;
+  padding-bottom: 15px;
+  font-size: 0.8rem; }
