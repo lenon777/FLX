@@ -1,0 +1,54 @@
+@import "variables";
+
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+  border-bottom: 1px solid lighten(@greyColor, 50%);
+
+
+  .nav-link {
+    padding: 1rem;
+    font-weight: bold;
+
+    &:hover {
+      transition: .4s ease-out;
+      transition-delay: 0.3s;
+      background: @blueColor;
+      color: @whiteColor !important;
+    }
+  }
+}
+
+.title-border {
+  border-bottom: 1px solid @blueColor;
+}
+
+.old-topic {
+  margin-top: 25px;
+}
+
+.old-topic-red {
+  background: @redColor;
+  border: 1px solid @redColor
+}
+
+.old-topic-blue {
+  background: @blueColor;
+  border: 1px solid @blueColor;
+}
+
+.old-topic-orange {
+  background: @orangeColor;
+  border: 1px solid @orangeColor;
+}
+
+.old-topic-green {
+  background: @greenColor;
+  border: 1px solid @greenColor;
+}
+
+.footer-info {
+  background: @greyColor;
+  color: @whiteColor;
+  padding: 15px 0 15px 25px;
+}
