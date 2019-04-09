@@ -1,0 +1,93 @@
+// Common
+@import 'material-icons'; // self hosted material icons
+
+.wrapper {
+  display: flex;
+}
+.player {
+  width: 250px;
+  height: 250px;
+  border-radius: 15px;
+  .controls {
+    padding: 7px;
+    width: 100%;
+  }
+  .progress {
+    height: 3px;
+    background: #eeeeee; 
+    &-line {
+      height: 100%;
+      width: 8%;
+      background: #0000ff;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    i {
+      background: white;
+      cursor: pointer;
+      border-radius: 50%;
+    }
+    .stop {
+      font-size: 60px;
+      margin: 0 10px;
+    }
+    .prev,
+    .next {
+      font-size: 40px;
+    }
+  }
+}
+.filter-button {
+  background: #fff;
+  border: none;
+  cursor: pointer
+}
+.song-description {
+  color: #fff;
+  
+ }
+.author {
+  font-weight: bold;
+}
+.playlist {
+  padding: 0 25px;
+}
+.songs {
+  list-style: none;
+  li {
+    margin-top: 3px
+  }
+  
+}
+.song {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background: #eee;
+  padding: 5px 10px;
+  border-radius: 5px;
+  i {
+    cursor: pointer;
+  }
+   .isFavorite {
+    margin-left: auto;
+    color: black;
+    border: none;
+    background: transparent;
+  }
+  
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  &-title {
+    font-weight: bold;
+  }
+}
