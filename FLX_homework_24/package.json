@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "copy-webpack-plugin": "^5.0.2",
+    "init": "^0.1.2"
+  },
+  "name": "FLX_homework_24",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack",
+    "serve": "webpack-dev-server"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.1",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "node-less": "^1.0.0",
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.3.1"
+  }
+}
